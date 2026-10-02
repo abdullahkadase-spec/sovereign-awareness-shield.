@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "درع الوعي - Sovereign Shield",
+  "version": "1.0.0",
+  "description": "درع حماية بصرية ونفسية من الشائعات والدعاية المضللة.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.web.telegram.org/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
